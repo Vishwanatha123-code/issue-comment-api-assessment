@@ -55,15 +55,6 @@ GET /comments/by-author?author=john_doe
 curl http://localhost:8080/comments/by-author?author=john_doe
 ```
 
-### 🧹 Clear all comments (for dev/testing)
-```http
-DELETE /comments/clear
-```
-**curl:**
-```bash
-curl -X DELETE http://localhost:8080/comments/clear
-```
-
 ## 📫 Using with Postman
 
 ### 🔸 Add a Comment
@@ -85,10 +76,6 @@ curl -X DELETE http://localhost:8080/comments/clear
 ### 🔸 Get Comments by Author
 - Method: `GET`
 - URL: `http://localhost:8080/comments/by-author?author=john_doe`
-
-### 🔸 Clear All Comments (Dev Only)
-- Method: `DELETE`
-- URL: `http://localhost:8080/comments/clear`
 
 ## Notes
 - `issueId` should be a valid UUID.
